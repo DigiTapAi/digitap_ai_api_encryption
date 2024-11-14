@@ -1,5 +1,6 @@
 # Encryption/Decryption API
-This repository contains a Python-based API service that handles encryption and decryption of data using the ```json Web Encryption (JWE) standard. The API facilitates secure communication between a client and Digitap, where the payloads and responses are encrypted and decrypted using RSA public and private keys.
+This repository contains a Python-based API service that handles encryption and decryption of 
+data using the **json Web Encryption (JWE)** standard. The API facilitates secure communication between a client and Digitap, where the payloads and responses are encrypted and decrypted using RSA public and private keys.
 
 ## Features
 * **Encryption**: Encrypts payloads and responses based on the provided API path.
