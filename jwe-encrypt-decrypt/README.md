@@ -180,13 +180,13 @@ The API returns the following error response formats:
 ## Requirements
 * Python 3.7+
 * Dependencies:
-  * `jwe` for encryption and decryption
+  * `jwcrypto` for encryption and decryption
   * `json` for JSON handling 
 
 You can install dependencies using pip:
 
 ```bash
-pip install jwe
+pip install jwcrypto
 ```
 
 ## Security
