@@ -8,15 +8,14 @@ data using the **json Web Encryption (JWE)** standard. The API facilitates secur
 * **RSA Key Handling**: Public and private keys are read from the specified environment (env) and client-specific directories.
 
 ## Endpoints
-### 1. /client/encrypt
+### 1. [Client Payload Encrypt](https://svcstage.digitap.work/validation/v1/client/encrypt)
 * Method: POST
 * Description: Encrypts the payload from the client using Digitap's public key.
 * Request Body:
 ```json
 {
   "payload": "<client_payload>",
-  "env": "<environment>",
-  "client_id": "<client_id>"
+  "env": "<environment>"
 }
 ```
 * Response:
@@ -31,15 +30,14 @@ data using the **json Web Encryption (JWE)** standard. The API facilitates secur
 
 ```
 
-### 2. /digitap/encrypt
+### 2. [Digitap Response Encrypt](https://svcstage.digitap.work/validation/v1/digitap/encrypt)
 * Method: POST
 * Description: Encrypts the response from Digitap using the client's public key.
 * Request Body:
 ```json
 {
   "response": "<digitap_response>",
-  "env": "<environment>",
-  "client_id": "<client_id>"
+  "env": "<environment>"
 }
 ```
 * Response:
@@ -52,15 +50,14 @@ data using the **json Web Encryption (JWE)** standard. The API facilitates secur
   }
 }
 ```
-### 3. /digitap/decrypt
+### 3. [Client Payload Decrypt](https://svcstage.digitap.work/validation/v1/digitap/decrypt)
 * Method: POST
 * Description: Decrypts the payload from Digitap using Digitap's private key.
 * Request Body:
 ```json
 {
   "payload": "<digitap_encrypted_payload>",
-  "env": "<environment>",
-  "client_id": "<client_id>"
+  "env": "<environment>"
 }
 ```
 * Response:
@@ -74,7 +71,7 @@ data using the **json Web Encryption (JWE)** standard. The API facilitates secur
   }
 }
 ```
-### 4. /client/decrypt
+### 4. [Client Response Decrypt](https://svcstage.digitap.work/validation/v1/client/decrypt)
 * Method: POST
 * Description: Decrypts the response from the client using the client's private key.
 * Request Body:
