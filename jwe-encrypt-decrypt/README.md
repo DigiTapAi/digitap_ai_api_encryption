@@ -109,8 +109,7 @@ data using the **json Web Encryption (JWE)** standard. The API facilitates secur
 
 {
   "payload": "This is a sample payload",
-  "env": "prod",
-  "client_id": "client123"
+  "env": "prod"
 }
 ```
 * Response:
