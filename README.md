@@ -17,5 +17,3 @@ The Digitap AI Encryption API provides endpoints that enable secure encryption a
 ## References
 * To understand the JWE standard and its core components (payload, keys, headers, etc.), please 
   refer to our detailed guide: [Digitap AI JWE Encryption Guide](https://github.com/DigiTapAi/digitap_ai_api_encryption/blob/master/jwe-implementation/README.md).
-* For API-specific details, refer to the Encryption/Decryption API documentation below, which 
-  explains the endpoints and usage: [Encryption/Decryption API Guide](https://github.com/DigiTapAi/digitap_ai_api_encryption/blob/master/jwe-encrypt-decrypt/README.md).
