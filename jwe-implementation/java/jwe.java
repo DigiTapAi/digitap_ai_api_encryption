@@ -37,6 +37,10 @@ public class JweEncryption {
         JWEObject jweObject = new JWEObject(header, jwePayload);
 
         RSAEncrypter encrypter = new RSAEncrypter(rsaKey);
+
+        encrypter.getJCAContext()
+                 .setProvider(Security.getProvider("BC"));
+
         jweObject.encrypt(encrypter);
 
         // Serialize to compact form
@@ -51,6 +55,10 @@ public class JweEncryption {
 
         // Decrypt the JWE
         RSADecrypter decrypter = new RSADecrypter(privateKey);
+
+        decrypter.getJCAContext()
+                 .setProvider(Security.getProvider("BC"));
+
         jweObject.decrypt(decrypter);
 
         // Extract the payload
